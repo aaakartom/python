@@ -5,3 +5,4 @@ def firstlast(elements):
     return first+last
 
 print(firstlast("abcdefg"))
+
