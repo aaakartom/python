@@ -1,4 +1,4 @@
-from Beverage import *
+from beverages_beyond1 import *
 
 def output_beverage():
     for item in [Beverage(beverage, temperature)
