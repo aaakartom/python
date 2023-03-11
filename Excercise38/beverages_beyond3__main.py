@@ -1,14 +1,12 @@
 class LogFile():
     def __init__(self, name):
-        self.name = open(name, "r+")
+        self.log_file = open(name, "w")
 
-    def write(self):
-        self.name.write("Text")
+    def write(self, text):
+        self.log_file.write(text)
+        self.log_file.write("\n")
 
-    def read(self):
-        print(self.name.read())
-
-
-
-LogFile.write(LogFile("beverages_beyond3__file.txt"))
-LogFile.read(LogFile("beverages_beyond3__file.txt"))
+if __name__ == "main":
+    log = LogFile("beverages_beyond3__file.txt")
+    log.write("Here I am writing some text into my log.")
+    log.write("... and a little bit more")

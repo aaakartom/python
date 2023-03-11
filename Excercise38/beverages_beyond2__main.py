@@ -1,9 +1,12 @@
 from beverages_beyond2 import *
 
 def output_beverage():
-    for item in [Beverage(beverage, temperature)
+    beverages = [Beverage(beverage, temperature)
                  for beverage, temperature
-                 in {"Bloody Mary": 20, "Water": None, "Coke": 10}.items()]:
+                 in {"Bloody Mary": 20, "Coke": 10}.items()]
+    beverages.append(Beverage('Water'))
+
+    for item in beverages:
         print(item)
 
 

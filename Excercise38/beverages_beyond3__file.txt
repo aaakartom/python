@@ -1,1 +1,2 @@
-Text
+Here I am writing some text into my log.
+... and a little bit more
