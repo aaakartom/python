@@ -1,6 +1,10 @@
-import exercise36_beyond2__support_file as support_module
+# import exercise36_beyond2__support_file as support_module
+from exercise36_beyond2__support_file import true_characters
 
 string = input()
 
 
-support_module.true_characters(string)
+true_characters(string)
+
+if __name__ == '__main__':
+    # do something
